@@ -12,7 +12,7 @@ import AOS from "aos";
 import { useEffect } from "react";
 import "aos/dist/aos.css"; // 引入 aos.js 的樣式文件
 import Marquee from "react-fast-marquee";
-import ScrollCircleArticle from "../components/ScrollCircleArticle/index.tsx";
+import ScrollCircleArticle from "../components/ScrollCircleArticle/index.jsx";
 const fadeInUp = {
   hidden: { opacity: 0, y: 20 },
   visible: { opacity: 1, y: 0 },
