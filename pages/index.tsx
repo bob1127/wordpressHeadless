@@ -12,7 +12,8 @@ import AOS from "aos";
 import { useEffect } from "react";
 import "aos/dist/aos.css"; // 引入 aos.js 的樣式文件
 import Marquee from "react-fast-marquee";
-import ScrollCircleArticle from "../components/ScrollCircleArticle/index.jsx";
+// import Inner from "../components/Inner/index.jsx";
+// import ScrollCircleArticle from "../components/ScrollCircleArticle/index.jsx";
 const fadeInUp = {
   hidden: { opacity: 0, y: 20 },
   visible: { opacity: 1, y: 0 },
@@ -190,7 +191,7 @@ export default function Index({ allPosts: { edges }, preview }) {
                   </div>
                 </div>
 
-                <ScrollCircleArticle />
+                {/* <ScrollCircleArticle /> */}
 
                 <div className="bottom-div bg-[#c9b1df] p-[40px]">
                   <div className="img bg-white border border-black w-full rounded-[7px]">
