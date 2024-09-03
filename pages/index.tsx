@@ -54,8 +54,8 @@ export default function Index({ allPosts: { edges }, preview }) {
 
             {/* 結構化資料 UH1 */}
             <section className="lg:w-full xl:w-[1300px] mt-[200px] flex  overflow-hidden  border-3 border-red-500 flex-col sm:flex-col xl:flex-row   mx-auto">
-              <div className="left  border  border-black w-full md:w-[3/4] xl:w-[30%]">
-                <div className="bg-[#c9b1df] border border-black m-3 rounded-xl p-4">
+              <div className="left  left-section border  border-black w-full md:w-[3/4] xl:w-[30%]">
+                <div className="bg-[#6ca8e8] border border-black m-3 rounded-xl p-4">
                   <b className="text-[14px] py-[50px] font-bold text-black mt-[30px] text-center  ">
                     子どもの才能を伸ばす、話題の知育玩具を知っ
                   </b>
@@ -162,18 +162,19 @@ export default function Index({ allPosts: { edges }, preview }) {
                   </div>
                 </div>
               </div>
-              <div className="middle  border-4 border-orange-500 overflow-scroll p-[0px] lg:p-[30px] w-full md:w-[3/4] xl:w-[45%]">
+              <div className="middle middle-section  border border-black overflow-scroll p-[0px] lg:p-[30px] w-full md:w-[3/4] xl:w-[45%]">
                 <b className="text-[20px] font-bold flex justify-center text-center ">
                   FAMILY SNAP
                 </b>
                 <div className="py-[30px]">
                   <p className="text-[12px] text-center ">ファミリースナップ</p>
                   <img
+                    data-aos="fade-up"
                     className="w-full"
                     src="https://hugmug.jp/uploads/2023/10/%E3%82%B0%E3%83%AB%E3%83%BC%E3%83%97-616.jpg.webp"
                     alt=""
                   />
-                  <p>
+                  <p data-aos="fade-up" className="text-[13px] mb-4">
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                     Cumque dolorum sequi rem, accusamus aliquid laudantium quos
                     quas, ipsa officiis asperiores earum ab soluta nobis dolorem
@@ -186,14 +187,287 @@ export default function Index({ allPosts: { edges }, preview }) {
                   >
                     Buy now
                   </a>
-                  <div className="w-full overflow-scroll " data-aos="fade-up">
+                  <div
+                    className="w-full mt-[40px] overflow-scroll "
+                    data-aos="fade-up"
+                  >
                     {morePosts.length > 0 && <MoreStories posts={morePosts} />}
                   </div>
                 </div>
 
                 {/* <ScrollCircleArticle /> */}
+                <div className="line py-[50px] w-full relative">
+                  <div className="line  bg-black w-full h-[1px] absolute top-40%"></div>
+                  <a
+                    href="/"
+                    className="read absolute left-1/2 top-1/2 z-[9999] border rounded-[5px] flex justify-center items-center border-black bg-white py-2 inline-block w-[100px] transform -translate-x-1/2 -translate-y-1/2 hover:bg-[#6ca8e8] duration-400"
+                  >
+                    <p>read</p>
+                  </a>
+                </div>
+                <div data-aos="fade-up" className="img relative p-3 my-[50px]">
+                  <div className="mark01">
+                    <div className="border py-1  bg-[#6ca8e8] absolute right-0 top-[-10px] inline-block w-[100px] px-4 rounded-[5px] items-center border-black flex justify-center">
+                      <p className="text-black text-[14px] font-normal">
+                        FEATURE
+                      </p>
+                    </div>
+                  </div>
+                  <div className="mark02 py-[5px]  rounded-m inline-block absolute  right-0 bottom-[140px] z-[999999] w-[300px] ">
+                    <div className="txt-top inline-block rounded-[6px] bg-white border-t-none border border-black">
+                      <div className="py-[5px] hover:scale-105 duration-400 font-bold px-[30px] text-[13px] rounded-m">
+                        河北麻友子さんが 秋にしたい親子ファッションと
+                        子育てのこと
+                      </div>
+                    </div>
+                    <div className="txt-top mt-3 rounded-[6px] bg-white border-t-none border border-black">
+                      <div className="py-[5px]  hover:scale-105 duration-400 font-bold px-[30px] text-[13px] rounded-m">
+                        河北麻友子さんが 秋にしたい親子 子育てのこと
+                      </div>
+                    </div>
+                    <div className="txt-top mt-3 rounded-[6px] bg-white border-t-none border border-black">
+                      <div className="py-[5px]  hover:scale-105 duration-400 font-bold px-[30px] text-[13px] rounded-m">
+                        河北麻友子さんが
+                      </div>
+                    </div>
+                  </div>
+                  <div className="mark02 py-[50px] rounded-m inline-block absolute  right-0 bottom-[-70px] w-full ">
+                    <div className="txt-top rounded-[6px] bg-[#6ca8e8] border-t-none border border-black">
+                      <div className="py-[50px] font-bold px-[30px] text-[14px] rounded-m">
+                        河北麻友子さんが 秋にしたい親子ファッションと
+                        子育てのこと
+                      </div>
+                    </div>
+                  </div>
+                  <img
+                    className="w-full rounded-[10px]"
+                    src="https://hugmug.jp/uploads/2022/08/top_feature08-1.jpg.webp "
+                    alt=""
+                  />
+                </div>
+                <Marquee>
+                  <div className="text-[22px] font-black">・ FEATURE</div>
+                  <div className="text-[22px] font-black">・ FEATURE</div>
+                  <div className="text-[22px] font-black">・ FEATURE</div>
+                  <div className="text-[22px] font-black">・ FEATURE</div>
+                  <div className="text-[22px] font-black">・ FEATURE</div>
+                </Marquee>
 
-                <div className="bottom-div bg-[#c9b1df] p-[40px]">
+                <div data-aos="fade-up" className="img relative p-3 my-[50px]">
+                  <div className="mark01">
+                    <div className="border py-1  bg-[#6ca8e8] absolute right-0 top-[-10px] inline-block w-[100px] px-4 rounded-[5px] items-center border-black flex justify-center">
+                      <p className="text-black text-[14px] font-normal">
+                        FEATURE
+                      </p>
+                    </div>
+                  </div>
+                  <div className="mark02 py-[50px] rounded-m inline-block absolute  right-0 bottom-[-70px] w-full ">
+                    <div className="txt-top rounded-[6px] bg-[#6ca8e8] border-t-none border border-black">
+                      <div className="py-[50px] font-bold px-[30px] text-[14px] rounded-m">
+                        河北麻友子さんが 秋にしたい親子ファッションと
+                        子育てのこと
+                      </div>
+                    </div>
+                  </div>
+                  <img
+                    className="w-full rounded-[10px]"
+                    src="https://hugmug.jp/uploads/2024/08/carousel_re-768x768.jpg.webp "
+                    alt=""
+                  />
+                </div>
+
+                <div className="flex flex-col lg:flex-row">
+                  <div className=" w-full lg:w-1/2  p-2 " data-aos="fade-up">
+                    <div className="relative">
+                      <div className="mark z-[999999] absolute  py-1 border border-black flex justify-center inline-block w-[90px] rounded-[6px]  top-[-15px] bg-[#6ca8e8]  right-0">
+                        <p>title</p>
+                      </div>
+                      <div className="relative">
+                        <img
+                          className="w-[90%] mx-auto"
+                          src="https://hugmug.jp/uploads/2024/08/buzzit_0823_top-320x320.jpg.webp"
+                          alt=""
+                        />
+                      </div>
+                      <div className="flex mt-[-70px] relative flex-col">
+                        <div className="text-[12px] w-[120px] inline-block p-2 mb-[-2.7px] z-[999999] bg-white border-black border border-b-0 rounded-tl-[4px] rounded-tr-[4px]"></div>
+
+                        <div className="text-[12px] inline-block py-[40px] px-2 bg-white border-black border rounded-[4px] mb-4">
+                          <h3 className="text-[14px] mb-3 leading-snug ">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit
+                          </h3>
+                        </div>
+                      </div>
+                      <div />
+                      {/* <Avatar author={author} /> */}
+                    </div>
+                  </div>
+                  <div
+                    className=" w-full lg:w-1/2  p-2 "
+                    data-aos="fade-up"
+                    data-aos-delay="400"
+                  >
+                    <div className="relative">
+                      <div className="mark z-[999999] absolute  py-1 border border-black flex justify-center inline-block w-[90px] rounded-[6px] top-[-15px] bg-[#6ca8e8]  right-0">
+                        <p>title</p>
+                      </div>
+                      <div className="relative">
+                        <img
+                          className="w-[90%] mx-auto"
+                          src="https://hugmug.jp/uploads/2024/08/obento_top_new-320x320.gif"
+                          alt=""
+                        />
+                      </div>
+                      <div className="flex mt-[-70px] relative flex-col">
+                        <div className="text-[12px] w-[120px] inline-block p-2 mb-[-2.7px] z-[999999] bg-white border-black border border-b-0 rounded-tl-[4px] rounded-tr-[4px]"></div>
+
+                        <div className="text-[12px] inline-block py-[40px] px-2 bg-white border-black border rounded-[4px] mb-4">
+                          <h3 className="text-[14px] mb-3 leading-snug ">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit
+                          </h3>
+                        </div>
+                      </div>
+                      <div />
+                      {/* <Avatar author={author} /> */}
+                    </div>
+                  </div>
+                </div>
+                <div className="line py-[50px] w-full relative">
+                  <div className="line  bg-black w-full h-[1px] absolute top-40%"></div>
+                  <a
+                    href="/"
+                    className="read absolute left-1/2 top-1/2 z-[9999] border rounded-[5px] flex justify-center items-center border-black bg-white py-2 inline-block w-[100px] transform -translate-x-1/2 -translate-y-1/2 hover:bg-[#6ca8e8] duration-400"
+                  >
+                    <p>read</p>
+                  </a>
+                </div>
+                <div className="marquee my-[30px]">
+                  <div className="txt flex-col items-center flex justify-center ">
+                    <h3 className="text-[22px] font-bold">HugMug FRIENDS</h3>
+                    <p className="text-[14px]">ハグマグフレンズ</p>
+                  </div>
+                  <div className="marquee py-[40px] bg-[#6ca8e8]">
+                    {/* <div>
+                      <Marquee>
+                        <div className="border w-[300px] mx-2 bg-white items-center  flex justify-center rounded-[50px] px-[20px] border-black">
+                          <div className="img mt-2 rounded-[100px] overflow-hidden w-[50px] h-[50px]">
+                            <img
+                              className="w-full"
+                              src="https://hugmug.jp/uploads/2023/11/ph_chisato_kojima.jpg.webp"
+                              alt=""
+                            />
+                          </div>
+                          <div className="txt ">
+                            <p className="text-[14px]">
+                              Lorem ipsum dolor sit amet consectetur adipisicing
+                              elit. Nobis excepturi doloremque est.
+                            </p>
+                          </div>
+                        </div>
+                        <div className="border w-[300px] mx-2 bg-white items-center  flex justify-center rounded-[50px] px-[20px] border-black">
+                          <div className="img mt-2 rounded-[100px] overflow-hidden w-[50px] h-[50px]">
+                            <img
+                              className="w-full"
+                              src="https://hugmug.jp/uploads/2023/11/ph_chisato_kojima.jpg.webp"
+                              alt=""
+                            />
+                          </div>
+                          <div className="txt ">
+                            <p className="text-[14px]">
+                              Lorem ipsum dolor sit amet consectetur adipisicing
+                              elit. Nobis excepturi doloremque est.
+                            </p>
+                          </div>
+                        </div>
+                        <div className="border w-[300px] mx-2 bg-white items-center  flex justify-center rounded-[50px] px-[20px] border-black">
+                          <div className="img mt-2 rounded-[100px] overflow-hidden w-[50px] h-[50px]">
+                            <img
+                              className="w-full"
+                              src="https://hugmug.jp/uploads/2023/11/ph_chisato_kojima.jpg.webp"
+                              alt=""
+                            />
+                          </div>
+                          <div className="txt ">
+                            <p className="text-[14px]">
+                              Lorem ipsum dolor sit amet consectetur adipisicing
+                              elit. Nobis excepturi doloremque est.
+                            </p>
+                          </div>
+                        </div>
+                        <div className="border w-[300px] mx-2 bg-white items-center  flex justify-center rounded-[50px] px-[20px] border-black">
+                          <div className="img mt-2 rounded-[100px] overflow-hidden w-[50px] h-[50px]">
+                            <img
+                              className="w-full"
+                              src="https://hugmug.jp/uploads/2023/11/ph_chisato_kojima.jpg.webp"
+                              alt=""
+                            />
+                          </div>
+                          <div className="txt ">
+                            <p className="text-[14px]">
+                              Lorem ipsum dolor sit amet consectetur adipisicing
+                              elit. Nobis excepturi doloremque est.
+                            </p>
+                          </div>
+                        </div>
+                      </Marquee>
+                    </div> */}
+                    <div className="mt-3">
+                      <Marquee>
+                        <div className="border py-4 w-[220px] mx-2 bg-white items-center  flex justify-center rounded-[50px] px-[20px] border-black">
+                          <div className="img w-1/2 mt-2 overflow-hidden ">
+                            <img
+                              className="w-[50px] rounded-[100px]  h-[50px]"
+                              src="https://hugmug.jp/uploads/2023/11/ph_chisato_kojima.jpg.webp"
+                              alt=""
+                            />
+                          </div>
+                          <div className="txt 1/2">
+                            <p className="text-[14px] font-bold">Lorem ipsum</p>
+                          </div>
+                        </div>
+                        <div className="border py-4 w-[220px] mx-2 bg-white items-center  flex justify-center rounded-[50px] px-[20px] border-black">
+                          <div className="img w-1/2 mt-2 overflow-hidden ">
+                            <img
+                              className="w-[50px] rounded-[100px]  h-[50px]"
+                              src="https://hugmug.jp/uploads/2023/11/ph_chisato_kojima.jpg.webp"
+                              alt=""
+                            />
+                          </div>
+                          <div className="txt 1/2">
+                            <p className="text-[14px] font-bold">Lorem ipsum</p>
+                          </div>
+                        </div>
+                        <div className="border py-4 w-[220px] mx-2 bg-white items-center  flex justify-center rounded-[50px] px-[20px] border-black">
+                          <div className="img w-1/2 mt-2 overflow-hidden ">
+                            <img
+                              className="w-[50px] rounded-[100px]  h-[50px]"
+                              src="https://hugmug.jp/uploads/2023/11/ph_chisato_kojima.jpg.webp"
+                              alt=""
+                            />
+                          </div>
+                          <div className="txt 1/2">
+                            <p className="text-[14px] font-bold">Lorem ipsum</p>
+                          </div>
+                        </div>
+                        <div className="border py-4 w-[220px] mx-2 bg-white items-center  flex justify-center rounded-[50px] px-[20px] border-black">
+                          <div className="img w-1/2 mt-2 overflow-hidden ">
+                            <img
+                              className="w-[50px] rounded-[100px]  h-[50px]"
+                              src="https://hugmug.jp/uploads/2023/11/ph_chisato_kojima.jpg.webp"
+                              alt=""
+                            />
+                          </div>
+                          <div className="txt 1/2">
+                            <p className="text-[14px] font-bold">Lorem ipsum</p>
+                          </div>
+                        </div>
+                      </Marquee>
+                    </div>
+                  </div>
+                </div>
+                <div className="bottom-div bg-[#6ca8e8] p-[40px]">
                   <div className="img bg-white border border-black w-full rounded-[7px]">
                     <div className="txt p-10 relative">
                       <p className="text-[20px] txet-center font-bold">
@@ -259,7 +533,7 @@ export default function Index({ allPosts: { edges }, preview }) {
                   </b>
                 </div>
               </div>
-              <div className="left p-8 border bg-[#c9b1df] border-black w-full md:w-[3/4] xl:w-[30%]">
+              <div className="left p-8 border bg-[#6ca8e8] border-black w-full right-section md:w-[3/4] xl:w-[30%]">
                 <b className="text-[14px] font-bold">title</b>
                 {/* <ReactSlick/> */}
                 <div>
@@ -325,7 +599,7 @@ export default function Index({ allPosts: { edges }, preview }) {
                 className="wrap py-[50px] mt-6 w-[80%] overflow-hidden"
               >
                 <div>
-                  <div className="border flex justify-center items-center hover:bg-[#c9b1df] duration-100 border-black w-[400px] p-6 rounded-[65px] mx-3">
+                  <div className="border flex justify-center items-center hover:bg-[#6ca8e8] duration-100 border-black w-[400px] p-6 rounded-[65px] mx-3">
                     <img
                       src="https://www.nikoand.jp/wp-content/uploads/2024/07/bnr_town_guide_tokai_a_1080_1080.jpg"
                       className="border-3 rounded-full border-black w-[70px] h-[70px]"
